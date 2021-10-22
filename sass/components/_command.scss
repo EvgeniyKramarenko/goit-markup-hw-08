@@ -1,0 +1,118 @@
+.section-command {
+  background-color: #f5f4fa;
+  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.command__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 768) {
+  .command {
+    display: flex;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .command__item {
+    display: block;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $primary-white-color;
+
+    @media screen and (min-width: 1200) {
+      width: calc((100% - 90px) / 4);
+      margin-right: 30px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.member__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.member__speciality {
+  color: $primary-black-color;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.member__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+}
+
+.social-networks__item {
+  margin-right: 10px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.social-networks__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 90px;
+  padding: 12px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.social-networks__ikons {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-networks__link:focus &,
+  .social-networks__link:hover & {
+    fill: $primary-white-color;
+  }
+}
