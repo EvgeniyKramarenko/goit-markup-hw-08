@@ -2,17 +2,53 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet--container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .address {
-  margin-bottom: 60px;
+  text-decoration: none;
+  font-family: Roboto;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .address__postal,
 .address__connect {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  font-family: Roboto;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -36,7 +72,10 @@
 }
 
 .footer__list-box {
-  margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 5px;
+    margin-right: 89px;
+  }
 }
 
 .footer__title {
@@ -102,8 +141,13 @@
   display: block;
 }
 
+.footer__form-box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .footer__input {
-  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -113,6 +157,15 @@
   padding-left: 16px;
   background-color: rgba(47, 48, 58, 1);
   color: $primary-white-color;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 
   &::placeholder {
     font-size: 16px;
