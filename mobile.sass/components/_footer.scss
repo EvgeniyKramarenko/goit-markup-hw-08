@@ -1,7 +1,10 @@
+footer {
+  background-color: #2f303a;
+}
+
 .footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
 
   @media screen and (max-width: 1199px) {
     text-align: center;
