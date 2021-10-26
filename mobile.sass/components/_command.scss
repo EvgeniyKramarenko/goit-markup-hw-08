@@ -13,15 +13,6 @@
   }
 }
 
-.command__title {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  margin-bottom: 30px;
-}
-
 .command {
   @media screen and(min-width: 768px) {
     display: flex;
