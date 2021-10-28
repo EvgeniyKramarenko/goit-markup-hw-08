@@ -17,8 +17,8 @@
 
 @media screen and(min-width: 768px) {
   .page-header__container {
-    display: flex;
-    align-items: center;
+    align-items: baseline;
+    justify-content: center;
     min-height: 80px;
     padding-top: 21px;
     padding-bottom: 21px;
@@ -76,6 +76,9 @@
 
     &.is-open {
       display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &.is-hidden {

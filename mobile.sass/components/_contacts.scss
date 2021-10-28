@@ -1,9 +1,14 @@
+.contacts-box {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .contacts-list {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
     margin-bottom: 64px;
+    margin-top: auto;
   }
 }
 

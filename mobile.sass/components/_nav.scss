@@ -12,13 +12,11 @@
 
 .site-nav {
   display: flex;
-  text-align: stretch;
 
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 306px;
 
     .site-nav__item {
       margin-bottom: 32px;
@@ -31,7 +29,7 @@
 }
 
 .site-nav__link {
-  display: inline;
+  display: block;
   color: $primary-text-color;
   text-decoration: none;
   font-weight: 500;
@@ -97,15 +95,12 @@
   }
 }
 
-// .menu__tel,
-// .menu__mail {
-//   font-weight: 500;
-//   font-size: 12px;
-//   line-height: 1.16;
-//   letter-spacing: 0.02em;
-//   text-decoration: none;
-//   color: $primary-black-color;
-// }
+@media screen and (min-width: 768px) {
+  .menu__mail {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .menu__mail {
@@ -126,6 +121,7 @@
 
 .header__social-network {
   display: flex;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -133,7 +129,7 @@
 }
 
 .header__social-network__item {
-  margin-right: 20px;
+  margin-right: 10px;
 
   &:nth-child(4n) {
     margin-right: 0px;
@@ -141,9 +137,16 @@
 }
 
 .header__social-network__link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $title-text-color;
+}
+
+.menu__before {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 22px;
+  margin-left: 10px;
 }
